@@ -1,0 +1,56 @@
+var cinehouse = "DH"
+
+const catalogo = [
+  {
+    codigo: 1,
+    titulo: 'Harry Potter e a Ordem da Fênix',
+    duracao: 2,
+    atores: ['Daniel Radcliffe', 'Emma Watson', 'Rupert Grint'],
+    anoDeLancamento: 2007,
+    emCartaz: false
+  },
+  {
+    codigo: 2,
+    titulo: 'O Massacre da Serra Elétrica',
+    duracao: 1.5,
+    atores: ['Cassio', 'Ygor Silva'],
+    anoDeLancamento: 2022,
+    emCartaz: true
+  }
+]
+
+function adicionarFilme(codigo, titulo, duracao, atores, anoDeLancamento, emCartaz) {
+  catalogo.push(
+    {
+    codigo,
+    titulo,
+    duracao,
+    atores,
+    anoDeLancamento,
+    emCartaz
+    }
+  )
+}
+// = >
+function buscarFilme(identificador) {
+  const filme = catalogo.find((objeto) => objeto.codigo == identificador)
+
+  return filme
+}
+
+// = >
+// !true = false
+// !false = true
+const alterarStatusEmCartaz = (codigoDoFilme) => {
+  const filmeParaAlterar = catalogo.find((filme) => filme.codigo == codigoDoFilme)
+  
+  filmeParaAlterar.emCartaz = !filmeParaAlterar.emCartaz
+
+  return filmeParaAlterar
+}
+
+adicionarFilme(3, 'Lilo e Stitch', 1.5, ['Lilo', 'Stitch'], 2002, false)
+
+// console.log(catalogo)
+console.log('Seu filme é: ', buscarFilme(2))
+console.log('Seu filme alterado é: ', alterarStatusEmCartaz(1))

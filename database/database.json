@@ -1,0 +1,13 @@
+[{  "codigo":15,"titulo":"A Fantástica Fábrica de Chocolate",
+    "duracao":2,"atores":["Johnny Depp","Freddie Highmore","Philip Wiegratz"],
+    "anoDeLancamento":2005,
+    "emCartaz":true},
+    
+{   "codigo":65,"titulo":"Thor: Ragnarok",
+    "duracao":2,"atores":["Chris Hemsworth","Mark Ruffalo","Taika Waititi"],
+    "anoDeLancamento":2017,"emCartaz":false},
+    
+{   "codigo":88,"titulo":"O Batman",
+    "duracao":2,"atores":["Robert Pattinson","Barry Keoghan","John Turturro"],
+    "anoDeLancamento":2022,
+    "emCartaz":true}]
